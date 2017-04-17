@@ -1,0 +1,91 @@
+\documentclass{report}
+\title{R2 Unit specifications}
+\author{E.R}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+%=======================================
+\chapter{Functional design}
+%=======================================
+\section{Overview}
+%---------------------------------------
+\subsection{Goal}
+
+Build a 1:1 fully fonctional R2 unit from the Star Wars universe. Remote controlled props have been build quite often, the idea is to make this version fully autonomous and actually doing some useful stuff (not hacking spaceship computers nor flying). See it like a R2-shaped Jarvis.
+
+%---------------------------------------
+\subsection{Functionalities}
+
+\paragraph{Main function}
+Behaves as a pet and assists an individual in its everyday life
+
+\paragraph{Subfunctions}
+
+1. Can connect to the network and request informations (to internet, to connected devices - e.g. plant monitoring system, to home domotic system, ...)
+
+2. Can move in known spaces without hurting things and people
+
+3. Can move towards a known individual location (location computed from sound/visual information)
+
+4. Can manipulate objects up to 1-2kg, carry them inside it.
+
+5. Can do fine enough manipulation (grasping with 5mm precision)
+
+%=======================================
+\chapter{Technical design}
+%=======================================
+\section{Packages}
+%---------------------------------------
+\subsection{Mobile base}
+%---------------------------------------
+\subsection{Sensoring}
+Camera for visual recognition of faces, remote search of objects
+
+Microphones for verbal commands, localisation of individuals
+
+Depth/range sensors for 3D shape sensoring (obstacle avoidance navigation, mapping)
+
+Temperature (internal)
+%---------------------------------------
+\subsection{Grippers, tools}
+%---------------------------------------
+\subsection{Communication}
+%---------------------------------------
+\subsubsection{Visual}
+Screen for displaying various non-verbal information
+%---------------------------------------
+\subsubsection{Sound}
+R2D2 language (bip-coded)
+%---------------------------------------
+\subsubsection{Networks}
+
+\paragraph{Wifi}
+\paragraph{ioT protocols}
+
+%---------------------------------------
+\subsection{Power and Autonomy}
+
+\begin{center}
+  \begin{tabular}{l | l }
+    Desired autonomy & 2h (or 8h ?)\\ \hline
+    Battery level for automatic docking  & 15mn\\ \hline
+    Battery level for emergency plugging  & 5mn\\
+  \end{tabular}
+\end{center}
+
+%---------------------------------------
+\subsection{Behavioral controller}
+
+\emph{my AI is smarter than yours}) (Maisty)
+
+\emph{my mind is smarter than yours}) (M$^2$isty)
+
+%---------------------------------------
+%=======================================
+\section{Summing up}
+
+
+\end{document}
